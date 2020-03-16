@@ -7,7 +7,7 @@
 <body>
 
   <div class="hero">
-    <h1 contenteditable>🔥WOAH!</h1>
+    <h1 contenteditable>🔥MEGHAN!</h1>
   </div>
 
   <style>
@@ -36,8 +36,9 @@
 
 <script>
   const hero = document.querySelector('.hero');
+  const showing = document.querySelector('.showing')
   const text = hero.querySelector('h1');
-  const walk = 500; // 500px
+  const walk = 250; // 500px
 
   function shadow(e) {
     const { offsetWidth: width, offsetHeight: height } = hero;
@@ -60,7 +61,15 @@
 
   }
 
+
+
   hero.addEventListener('mousemove', shadow);
+
+
+/*   window.addEventListener('devicemotion', function(event) {
+  alert(event.acceleration.x + ' m/s2');
+}); */
+
 </script>
 </body>
 </html>
